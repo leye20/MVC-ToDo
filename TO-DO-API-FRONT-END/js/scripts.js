@@ -1,5 +1,5 @@
 // Grab the index
-const allToDos = documentsgetElementById( 'index' );
+const allToDos = document.getElementById( 'index' );
 // if available, proceed.
 if ( allToDos )
 { // Run Axios to obtain list.
@@ -8,9 +8,13 @@ if ( allToDos )
     .then( response => response.data )
     // "Process" our data (JSON object or array.)
     .then( data => {
+        console.log( data );
         // Output list of todos.
-        data.forEach( toDo => {
+        // data.forEach( toDo => {
 
-        });
+        // });
     });
 }
+
+// Grab the index
+const createToDo = document.getElementById( 'create' );
